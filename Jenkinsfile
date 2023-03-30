@@ -7,7 +7,7 @@ pipeline {
                 script {
                     def fullPath = "${WORKSPACE}\\main.py"
                     echo fullPath
-                    sh "python ${fullPath}"
+                    bat 'python main.py'
                 }
             }
         }
