@@ -1,4 +1,4 @@
-// run the python script
+\\/ run the python script
 pipeline {
     agent any
     stages {
@@ -9,7 +9,7 @@ pipeline {
                 //     echo fullPath
                     
                 // }
-                bat 'python main.py'
+                bat 'C:\\Program Files\\Python310\\python.exe C:\\Users\\kumaru\\projects\\jenkins-proj\\main.py'
             }
         }
     }
