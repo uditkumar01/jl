@@ -1,4 +1,4 @@
-\\/ run the python script
+// run the python script
 pipeline {
     agent any
     stages {
