@@ -1,6 +1,9 @@
 // run the python script
 pipeline {
     agent any
+    parameters {
+        file(name:'FILE', description: 'upload excel file')
+    }
     stages {
         stage('Build') {
             steps {
