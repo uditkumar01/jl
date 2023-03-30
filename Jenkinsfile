@@ -4,11 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
-                    def fullPath = "${WORKSPACE}\\main.py"
-                    echo fullPath
-                    bat 'python main.py'
-                }
+                // script {
+                //     def fullPath = "${WORKSPACE}\\main.py"
+                //     echo fullPath
+                    
+                // }
+                bat 'python main.py'
             }
         }
     }
