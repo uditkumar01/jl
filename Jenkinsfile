@@ -5,8 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    def fullPath = "${WORKSPACE}/main.py"
+                    def fullPath = "${WORKSPACE}\\main.py"
                     echo fullPath
+                    sh "python ${fullPath}"
                 }
             }
         }
