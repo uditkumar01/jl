@@ -9,7 +9,7 @@ pipeline {
                 //     echo fullPath
                     
                 // }
-                bat 'C:\\Program Files\\Python310\\python.exe C:\\Users\\kumaru\\projects\\jenkins-proj\\main.py'
+                bat '"C:\\Program Files\\Python310\\python.exe" "C:\\Users\\kumaru\\projects\\jenkins-proj\\main.py"'
             }
         }
     }
