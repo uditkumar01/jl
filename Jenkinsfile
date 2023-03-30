@@ -9,7 +9,7 @@ pipeline {
                 //     echo fullPath
                     
                 // }
-                sh 'python main.py'
+                bat 'python3 main.py'
             }
         }
     }
