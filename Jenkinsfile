@@ -13,6 +13,7 @@ pipeline {
                     
                 // }
                 bat '"C:\\Program Files\\Python310\\python.exe" "C:\\Users\\kumaru\\projects\\jenkins-proj\\main.py"'
+                writeFile file: 'file.csv', text: readFile(FILE)     
             }
         }
     }
