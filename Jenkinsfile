@@ -13,7 +13,6 @@ pipeline {
                     
                 // }
                 // sh "export TERM=xterm-color"
-                bat "export TERM=xterm-color"
                 bat 'pip install -r requirements.txt'
                 bat '"C:\\Program Files\\Python310\\python.exe" "C:\\Users\\kumaru\\projects\\jenkins-proj\\main.py"'
                 writeFile(file: 'file.csv', text: readFile(FILE))  
